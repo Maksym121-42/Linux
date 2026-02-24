@@ -13,9 +13,10 @@
 gcc --version
 Приклад результату:
 
-pirat@AdminUbuntu: ~$ gcc --version
-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
-
+```bash
+pirat@AdminUbuntu:~$ gcc --version
+gcc (Ubuntu 13.3.0-6ubuntu22.04.1) 13.3.0
+```
 Це означає, що компілятор GCC встановлений та готовий до використання.
 
 Якщо замість цього з’являється повідомлення про відсутність команди, необхідно встановити пакет build-essential:
@@ -23,3 +24,17 @@ gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
 sudo apt install build-essential
 
 Після встановлення слід повторно перевірити версію компілятора.
+
+Переходимо до робочої папки та перевіряємо список файлів у директорії:
+``` bash
+pirat@AdminUbuntu:~$ cd ~/Desktop/Lab
+pirat@AdminUbuntu:~/Desktop/Lab$ ls
+```
+**hello  hello.c  pr1  pr1.c**
+
+Для запуску виконуваного файлу використовуємо команду:
+./hello
+**Результат:**
+Hello Ubuntu
+
+
