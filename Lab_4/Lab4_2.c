@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int neg = -100;
+    void *p1 = malloc(neg);   // від’ємний аргумент
+
+    int xa = 50000, xb = 50000;
+    int num = xa * xb;        // переповнення signed int
+    void *p2 = malloc(num);
+
+    printf("neg = %d, p1 = %p\n", neg, p1);
+    printf("num = %d, p2 = %p\n", num, p2);
+
+    free(p1);
+    free(p2);
+    return 0;
+}
+
